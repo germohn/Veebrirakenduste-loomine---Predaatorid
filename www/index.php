@@ -4,15 +4,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Predaator ostan-müün-vahetan</title>
 	</head>
-	<div>
+
+	<body>
 	<header>
 		<h1 style="font-family: Arial; float:left">Predaatori oksjonid</h1>
 		<button class="logbutton" style="float:right">Log in</button>
 		<button class="button" style="float:right">Register</button>
 	
 	
-	</header></div>
-	<body>
+	</header>
 	<br>
 	<div >
 		<br>
