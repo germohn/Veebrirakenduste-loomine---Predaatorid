@@ -1,48 +1,49 @@
-div {
-	background-color: rgba(222, 222, 222, 0.56);
-	margin: -15px -5px;
-	padding: 10px;
-	
-}
+
 .button {
 	background-color: blue;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border: 2px solid #a1a1a1;
+    /*color: white;*/
+    padding: 15px 32px;
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    display: inline-block;
+    /*font-size: 16px;*/
+    /*margin: 10px;*/
+    /*cursor: pointer;*/
+    /*border: 2px solid #a1a1a1;*/
     
     border-radius: 25px;
 
-    padding: 20px; 
+    /*padding: 20px; */
 
 }
-.logbutton {
-	background-color: white;
-	color: black;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border: 2px solid #a1a1a1;
+#header-buttons{
+	top: 0;
+	right: 0;
+	position: absolute;
+	margin: 10px;
+}
+#header-name{
+	top: 0;
+	position: absolute;
+	left: 0;
+	margin: 10px;
+}
+.header{
+	position: relative;
+	background-color: #a5ff0c;
+	padding: 30px;
+	margin: -10px;
 
-    border-radius: 25px;
-	border-radius: 25px;
-    padding: 20px; 
 
 }
-header {
-	background-color: #c1c1c1;
-	margin: -10px 0px;
-	
+.body {
 }
+
 body {
-	background-color : C6F7F2;
+	background-color : #C6F7F2;
+}
+#front-page-img{
+	width:980px;
+	height:583px;
+
 }

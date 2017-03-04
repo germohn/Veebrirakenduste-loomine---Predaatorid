@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Germo
+ * Date: 03/03/2017
+ * Time: 21:17
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +63,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
