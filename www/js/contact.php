@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Germo
- * Date: 04/03/2017
- * Time: 15:42
- */
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -47,13 +40,7 @@
     </div>
 </nav>
 
-<div class="container">
-    <p>Meie asukoht: </p>
-    <iframe
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDiDuiPNAgB2mpEUPy6DICNoENp0JLUnig
-    &q=Raekoja+Plats,Tartu" allowfullscreen>
-    </iframe>
-</div>
+<!-- Add page contents after that  -->
 
 
 <footer class="container-fluid text-center">
@@ -62,4 +49,3 @@
 
 </body>
 </html>
-
