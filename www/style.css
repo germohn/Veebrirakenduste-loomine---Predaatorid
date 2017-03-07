@@ -33,9 +33,12 @@
 	background-color: #a5ff0c;
 	padding: 30px;
 	margin: -10px;
-
-
 }
+
+.ltpic{
+	width: 60px;
+}
+
 .body {
 }
 
@@ -52,6 +55,7 @@ body {
 	height:440px;
 	width:700px;
 }
+
 #gmap_canvas img{
 	max-width:none!important;
 	background:none!important
