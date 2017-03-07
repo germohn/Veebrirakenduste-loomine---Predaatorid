@@ -1,15 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Germo
- * Date: 03/03/2017
- * Time: 21:15
- */
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Predaator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -51,7 +43,8 @@
     <div class="row">
         <!-- Log in part  -->
         <div class="col-sm-6">
-            <form>
+            <form class="form-horizontal">
+                <fieldset>
                 <legend>Logi sisse siin!</legend>
 
                 <div class="form-group row">
@@ -71,6 +64,7 @@
                         <button type="submit" class="btn btn-primary">Sign in</button>
                     </div>
                 </div>
+                </fieldset>
             </form>
         </div>
         <!-- register part -->
@@ -87,7 +81,6 @@
                         <div class="col-md-4">
                             <input id="fn" name="fn" type="text" placeholder="First name" class="form-control input-md"
                                    required="">
-
                         </div>
                     </div>
 
@@ -141,10 +134,8 @@
             </form>
 
         </div>
-        </form>
 
     </div>
-</div>
 </div>
 
 <footer class="container-fluid text-center">

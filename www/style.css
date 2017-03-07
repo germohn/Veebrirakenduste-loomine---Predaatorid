@@ -48,6 +48,14 @@ iframe {
 body {
 }
 
+#gmap_canvas{
+	height:440px;
+	width:700px;
+}
+#gmap_canvas img{
+	max-width:none!important;
+	background:none!important
+}
 #front-page-img{
 	width:980px;
 	height:583px;
