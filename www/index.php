@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common/css/style.css">
 </head>
 <body>
 
@@ -54,14 +54,14 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="i_view64_2017-02-16_13-53-18.png" alt="shop-image">
+                        <img src="common/img/i_view64_2017-02-16_13-53-18.png" alt="shop-image">
                         <div class="carousel-caption">
                             <h3>Cash&Money&Bitches</h3>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img src="predatorInAction.jpg" alt="predator-Image">
+                        <img src="common/img/predatorInAction.jpg" alt="predator-Image">
                         <div class="carousel-caption">
                             <h3>More Sell $</h3>
                             <p>Lorem ipsum...</p>

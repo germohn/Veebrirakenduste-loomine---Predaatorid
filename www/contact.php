@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="changeImage.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="common/js/changeImage.js"></script>
+    <link rel="stylesheet" href="common/css/style.css">
 
 </head>
 <body>
@@ -54,7 +54,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img id="ltpic1" src="pilt3.jpg" onclick='changeImage("pilt4.jpg");' alt="vahva elevant" >
+                    <img id="ltpic1" src="common/img/pilt3.jpg" onclick='changeImage("img/pilt4.jpg");' alt="vahva elevant" >
                 </div>
             </div>
             <div class="row">
@@ -64,7 +64,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img id="ltpic2" src="pilt1.jpeg" alt="tore zebra">
+                    <img id="ltpic2" src="common/img/pilt1.jpeg" alt="tore zebra">
                 </div>
             </div>
             <div class="row">
@@ -74,7 +74,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img id="ltpic3" src="pilt2.jpeg" alt="muhe känguru">
+                    <img id="ltpic3" src="common/img/pilt2.jpeg" alt="muhe känguru">
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
 
             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
             <div id='gmap_canvas'></div>
-            <script src="map.js" defer></script>
+            <script src="common/js/map.js" defer></script>
         </div>
     </div>
 </div>
