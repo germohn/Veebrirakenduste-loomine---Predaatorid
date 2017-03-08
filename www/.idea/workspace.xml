@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fafca8-e3a3-4819-8728-8b073cd6ff20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changeImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.php" afterPath="$PROJECT_DIR$/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="515">
@@ -72,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="93" lean-forward="false" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="93" />
+            <state relative-caret-position="227">
+              <caret line="56" column="96" lean-forward="false" selection-start-line="56" selection-start-column="96" selection-end-line="56" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -133,12 +130,12 @@
         <option value="$PROJECT_DIR$/map.js" />
         <option value="$PROJECT_DIR$/hide.js" />
         <option value="$PROJECT_DIR$/loadLater.js" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/flip.js" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/chimg.js" />
         <option value="$PROJECT_DIR$/changeImage.js" />
         <option value="$PROJECT_DIR$/contact.php" />
+        <option value="$PROJECT_DIR$/login.php" />
       </list>
     </option>
   </component>
@@ -283,12 +280,12 @@
       <workItem from="1488556364804" duration="4905000" />
       <workItem from="1488631424883" duration="3984000" />
       <workItem from="1488638697731" duration="3648000" />
-      <workItem from="1488890112481" duration="18572000" />
+      <workItem from="1488890112481" duration="19198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44603000" />
+    <option name="totallyTimeSpent" value="45229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -629,14 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="93" lean-forward="false" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -673,6 +662,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="90" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="56" column="96" lean-forward="false" selection-start-line="56" selection-start-column="96" selection-end-line="56" selection-end-column="96" />
           <folding />
         </state>
       </provider>
