@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="changeImage.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -53,7 +54,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img class="ltpic" src="pilt3.jpg" alt="vahva elevant">
+                    <img id="ltpic1" src="pilt3.jpg" onclick='changeImage("pilt4.jpg");' alt="vahva elevant" >
                 </div>
             </div>
             <div class="row">
@@ -63,7 +64,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img class="ltpic" src="pilt1.jpeg" alt="tore zebra">
+                    <img id="ltpic2" src="pilt1.jpeg" alt="tore zebra">
                 </div>
             </div>
             <div class="row">
@@ -73,7 +74,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img class="ltpic" src="pilt2.jpeg" alt="muhe känguru">
+                    <img id="ltpic3" src="pilt2.jpeg" alt="muhe känguru">
                 </div>
             </div>
         </div>
