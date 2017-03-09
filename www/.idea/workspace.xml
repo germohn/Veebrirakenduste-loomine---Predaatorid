@@ -2,38 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1fafca8-e3a3-4819-8728-8b073cd6ff20" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/changeImage.js" afterPath="$PROJECT_DIR$/common/js/changeImage.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap-theme.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/css/bootstrap.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/assets/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/i_view64_2017-02-16_13-53-18.png" afterPath="$PROJECT_DIR$/common/img/i_view64_2017-02-16_13-53-18.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/common/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/common/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/npm.js" afterPath="$PROJECT_DIR$/common/js/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/map.js" afterPath="$PROJECT_DIR$/common/js/map.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pilt1.jpeg" afterPath="$PROJECT_DIR$/common/img/pilt1.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pilt2.jpeg" afterPath="$PROJECT_DIR$/common/img/pilt2.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pilt3.jpg" afterPath="$PROJECT_DIR$/common/img/pilt3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pilt4.jpg" afterPath="$PROJECT_DIR$/common/img/pilt4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/predatorInAction.jpg" afterPath="$PROJECT_DIR$/common/img/predatorInAction.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/common/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/afterLogIn.php" afterPath="$PROJECT_DIR$/afterLogIn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/style.css" afterPath="$PROJECT_DIR$/common/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.php" afterPath="$PROJECT_DIR$/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uueleheP6hi.html" afterPath="$PROJECT_DIR$/uueleheP6hi.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +19,38 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-444">
+              <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="76" column="127" lean-forward="false" selection-start-line="76" selection-start-column="127" selection-end-line="76" selection-end-column="127" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/js/map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -93,9 +96,10 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/chimg.js" />
         <option value="$PROJECT_DIR$/changeImage.js" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/common/css/style.css" />
         <option value="$PROJECT_DIR$/contact.php" />
+        <option value="$PROJECT_DIR$/login.php" />
       </list>
     </option>
   </component>
@@ -111,10 +115,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="339" />
-    <option name="y" value="214" />
-    <option name="width" value="937" />
-    <option name="height" value="533" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -132,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -142,6 +147,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -169,13 +192,30 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,18 +312,19 @@
       <workItem from="1488556364804" duration="4905000" />
       <workItem from="1488631424883" duration="3984000" />
       <workItem from="1488638697731" duration="3648000" />
-      <workItem from="1488890112481" duration="21054000" />
+      <workItem from="1488890112481" duration="23226000" />
+      <workItem from="1489048081279" duration="1851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47085000" />
+    <option name="totallyTimeSpent" value="51108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="339" y="214" width="937" height="533" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31270358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -536,18 +577,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/contact.php" />
     <entry file="file://$PROJECT_DIR$/common/img/i_view64_2017-02-16_13-53-18.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -558,30 +591,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadLater.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hide.js" />
+    <entry file="file://$PROJECT_DIR$/loadLater.js" />
     <entry file="file://$PROJECT_DIR$/createDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -602,22 +613,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="45" column="7" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/flip.js" />
     <entry file="file://$PROJECT_DIR$/common/js/changeImage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -642,14 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="96" lean-forward="false" selection-start-line="56" selection-start-column="96" selection-end-line="56" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -658,10 +646,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        <state relative-caret-position="-444">
+          <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="76" column="127" lean-forward="false" selection-start-line="76" selection-start-column="127" selection-end-line="76" selection-end-column="127" />
           <folding />
         </state>
       </provider>

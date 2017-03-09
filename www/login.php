@@ -29,11 +29,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
@@ -45,7 +45,8 @@
         <div class="col-sm-6">
             <form class="form-horizontal">
                 <fieldset>
-                <legend>Logi sisse siin!</legend>
+                <legend>Logi sisse siin! <span title="Kui sul on kasutaja juba olemas, saad siin emaili ja parooliga sisse logida"
+                                               class="glyphicon glyphicon-info-sign"></span></legend>
 
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
@@ -73,7 +74,8 @@
                 <fieldset>
 
                     <!-- Form Name -->
-                    <legend>Pole veel kasutaja?</legend>
+                    <legend>Pole veel kasutaja? <span title="...sellest pole midagi! Saad selle endale siin väga lihtsalt teha."
+                                                      class="glyphicon glyphicon-info-sign"></span></legend>
 
                     <!-- First name-->
                     <div class="form-group">
@@ -107,7 +109,8 @@
 
                     <!-- password-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="password">Password</label>
+                        <label class="col-md-4 control-label" for="password">Password <span title="Veendu, et valid endale piisavalt tugeva parooli!"
+                                                                                            class="glyphicon glyphicon-info-sign"></span> </label>
                         <div class="col-md-4">
                             <input type="password" name="password" id="password" class="form-control input-sm"
                                    placeholder="Password">

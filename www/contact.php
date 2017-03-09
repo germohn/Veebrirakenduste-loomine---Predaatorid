@@ -30,8 +30,8 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li class="active"><a href="contact.php">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
@@ -54,7 +54,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img id="ltpic1" src="common/img/pilt3.jpg" onclick='changeImage("img/pilt4.jpg");' alt="vahva elevant" >
+                    <img id="ltpic1" src="common/img/pilt3.jpg" onclick='changeImage("common/img/pilt4.jpg");' alt="vahva elevant" >
                 </div>
             </div>
             <div class="row">
@@ -81,13 +81,12 @@
         <div class="col-md-6">
             <h4>Predaatori oksjonid leiad: </h4>
 
-            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <script defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC_ve16Vev_0Bh1FDf6IhLFu4p5qwenB2M'></script>
             <div id='gmap_canvas'></div>
             <script src="common/js/map.js" defer></script>
         </div>
     </div>
 </div>
-
 <footer class="container-fluid text-center">
     <p>Predaator Copyright</p>
 </footer>
