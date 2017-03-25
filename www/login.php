@@ -9,13 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <?php include 'language.php' ?>
+    <?php include 'cookie.php' ?>
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1>Predaator ja Tulnukas</h1>
-        <p>Osta ja Müü vana kraami</p>
+        <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
+        <p><?php echo $lang['HEADER_TITLE']; ?></p>
     </div>
 </div>
 
@@ -29,12 +31,12 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="index.php"><?php echo $lang['HOME']; ?></a></li>
+                <li><a href="contact.php"><?php echo $lang['CONTACT']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?></a></li>
             </ul>
         </div>
     </div>
@@ -45,24 +47,24 @@
         <div class="col-sm-6">
             <form class="form-horizontal">
                 <fieldset>
-                <legend>Logi sisse siin! <span title="Kui sul on kasutaja juba olemas, saad siin emaili ja parooliga sisse logida"
+                <legend><?php echo $lang['LOGIN_HERE']; ?> <span title="<?php echo $lang['TOOLTIP3']; ?>"
                                                class="glyphicon glyphicon-info-sign"></span></legend>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <label for="inputPassword3" class="col-sm-2 col-form-label"><?php echo $lang['PASSWORD']; ?></label>
                     <div class="col-sm-6">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <input type="password" class="form-control" id="inputPassword" placeholder=<?php echo $lang['PASSWORD']; ?>>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="offset-sm-2 col-sm-6">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary"><?php echo $lang['LOGIN']; ?></button>
                     </div>
                 </div>
                 </fieldset>
@@ -74,23 +76,23 @@
                 <fieldset>
 
                     <!-- Form Name -->
-                    <legend>Pole veel kasutaja? <span title="...sellest pole midagi! Saad selle endale siin väga lihtsalt teha."
+                    <legend><?php echo $lang['USER']; ?><span title="<?php echo $lang['TOOLTIP1']; ?>"
                                                       class="glyphicon glyphicon-info-sign"></span></legend>
 
                     <!-- First name-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="fn">First name</label>
+                        <label class="col-md-4 control-label" for="fn"><?php echo $lang['FIRST_NAME']; ?></label>
                         <div class="col-md-4">
-                            <input id="fn" name="fn" type="text" placeholder="First name" class="form-control input-md"
+                            <input id="fn" name="fn" type="text" placeholder="<?php echo $lang['FIRST_NAME']; ?>" class="form-control input-md"
                                    required="">
                         </div>
                     </div>
 
                     <!-- last name-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="ln">Last name</label>
+                        <label class="col-md-4 control-label" for="ln"><?php echo $lang['LAST_NAME']; ?></label>
                         <div class="col-md-4">
-                            <input id="ln" name="ln" type="text" placeholder="Last name" class="form-control input-md"
+                            <input id="ln" name="ln" type="text" placeholder="<?php echo $lang['LAST_NAME']; ?>" class="form-control input-md"
                                    required="">
 
                         </div>
@@ -98,9 +100,9 @@
 
                     <!-- e-mail /username-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="email">Email</label>
+                        <label class="col-md-4 control-label" for="email">E-mail</label>
                         <div class="col-md-4">
-                            <input id="email" name="email" type="email" placeholder="email"
+                            <input id="email" name="email" type="email" placeholder="E-mail"
                                    class="form-control input-md"
                                    required="">
 
@@ -109,27 +111,28 @@
 
                     <!-- password-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="password">Password <span title="Veendu, et valid endale piisavalt tugeva parooli!"
+                        <label class="col-md-4 control-label" for="password"><?php echo $lang['PASSWORD']; ?> <span title="<?php echo $lang['TOOLTIP2']; ?>"
                                                                                             class="glyphicon glyphicon-info-sign"></span> </label>
+
                         <div class="col-md-4">
                             <input type="password" name="password" id="password" class="form-control input-sm"
-                                   placeholder="Password">
+                                   placeholder=<?php echo $lang['PASSWORD']; ?>>
 
                         </div>
                     </div>
                     <!-- confirm password-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="password">Password</label>
+                        <label class="col-md-4 control-label" for="password"><?php echo $lang['PASSWORD']; ?></label>
                         <div class="col-md-4">
                             <input type="password" name="password_confirmation" id="password_confirmation"
-                                   class="form-control input-sm" placeholder="Confirm Password">
+                                   class="form-control input-sm" placeholder="<?php echo $lang['CONFIRM']; ?>">
                         </div>
                     </div>
                     <!-- Button -->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="register"></label>
                         <div class="col-md-4">
-                            <button id="register" name="register" class="btn btn-primary">Register</button>
+                            <button id="register" name="register" class="btn btn-primary"><?php echo $lang['REGISTER']; ?></button>
                         </div>
                     </div>
 
