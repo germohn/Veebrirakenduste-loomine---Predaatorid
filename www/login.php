@@ -4,6 +4,12 @@ include 'cookie.php';
 require_once "./common/core/database/dbconnect.php";
 session_start();
 
+if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
+
+   header("location: home.php");
+
+}
+
 if (isset($_POST["login"])) {
 
 //    var_dump(1);
@@ -57,10 +63,7 @@ if (isset($_POST["login"])) {
 
 <div class="jumbotron">
     <div class="container text-center">
-       
-        <div class="alert"><?= $_SESSION['message'] ?></div>
-        <h1>Predaator ja Tulnukas</h1>
-        <p>Osta ja Müü vana kraami</p>
+<!--        <div class="alert">--><?//= $_SESSION['message'] ?><!--</div>-->
 
         <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
         <p><?php echo $lang['HEADER_TITLE']; ?></p>
@@ -97,35 +100,32 @@ if (isset($_POST["login"])) {
         <!-- Log in part  -->
         <div class="col-sm-6">
 
-
-            <form class="form-horizontal" method="post">
+            <form class="form-horizontal " method="post" action="login.php">
                 <fieldset>
+                    <legend><?php echo $lang['LOGIN_HERE']; ?> <span title="<?php echo $lang['TOOLTIP3']; ?>"
+                                                                     class="glyphicon glyphicon-info-sign"></span>
+                    </legend>
 
-                        <fieldset>
-                            <legend><?php echo $lang['LOGIN_HERE']; ?> <span title="<?php echo $lang['TOOLTIP3']; ?>"
-                                                                             class="glyphicon glyphicon-info-sign"></span>
-                            </legend>
-
-                            <div class="form-group row">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputPassword3"
-                                       class="col-sm-2 col-form-label"><?php echo $lang['PASSWORD']; ?></label>
-                                <div class="col-sm-6">
-                                    <input type="password" class="form-control" id="inputPassword"
-                                           placeholder=<?php echo $lang['PASSWORD']; ?>>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="offset-sm-2 col-sm-6">
-                                    <button type="submit" class="btn btn-primary"><?php echo $lang['LOGIN']; ?></button>
-                                </div>
-                            </div>
-                        </fieldset>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+                        <div class="col-sm-6">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password"
+                               class="col-sm-2 col-form-label"><?php echo $lang['PASSWORD']; ?></label>
+                        <div class="col-sm-6">
+                            <input type="password" id="password" name="password" class="form-control"
+                                   placeholder=<?php echo $lang['PASSWORD']; ?>>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-6">
+                            <button type="submit" id="login" name="login"
+                                    class="btn btn-primary"><?php echo $lang['LOGIN']; ?></button>
+                        </div>
+                    </div>
 
                 </fieldset>
             </form>

@@ -1,3 +1,9 @@
+<?php
+include 'language.php';
+include 'cookie.php';
+session_start();
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,19 +37,29 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="home.php">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Deals</a></li>
                 <li><a href="#">Stores</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?= $_SESSION["firstName"] ?></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
+<div class="container-fluid">
+    <h3><?= $_SESSION["welcomemsg"] ?></h3>
+    <br>
+    <h3>Eesnimi: <?= $_SESSION["firstName"] ?></h3>
+    <br>
+    <h3>Email: <?= $_SESSION["email" ] ?></h3>
+    <br>
+    <button ><a href="logout.php">Log out</a></button>
+</div>
 
 
 <footer class="container-fluid text-center">

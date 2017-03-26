@@ -1,10 +1,10 @@
 <?php
 session_start();
-if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true ){
+if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true) {
 
-    echo "welcome " . $_SESSION["firstName"] . ", you are now loged in!";
+    $_SESSION["welcomemsg"] = "Welcome " . $_SESSION["firstName"] . ", you are now loged in!";
 
-}else{
+} else {
     $_SESSION["message"] = "You have to log in";
     header("location: login.php");
 }
@@ -49,7 +49,9 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true ){
                 <li><a href="contact.php">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?=$_SESSION['email'] ?></a></li>
+                <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?= $_SESSION["firstName"] ?>
+                    </a>
+                </li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
@@ -57,57 +59,65 @@ if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true ){
 </nav>
 
 <div class="container">
-    <div class="alert"><?=$_SESSION['firstName'] ?></div>
+    <div class="alert"><?= $_SESSION["welcomemsg"] ?></div>
     <div class="row">
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-danger">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-success">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
     </div>
-</div><br>
+</div>
+<br>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
     </div>
-</div><br><br>
+</div>
+<br><br>
 
 <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
