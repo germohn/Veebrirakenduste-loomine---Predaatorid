@@ -1,3 +1,15 @@
+<?php
+include 'language.php';
+include 'cookie.php';
+
+session_start();
+if (!isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] != true) {
+    $_SESSION["message"] = "You have to log in";
+    header("location: login.php");
+}
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,8 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
-    <?php include 'language.php' ?>
-    <?php include 'cookie.php' ?>
+
 </head>
 <body>
 
@@ -40,14 +51,24 @@
                 <li><a href="#"><?php echo $lang['CONTACT']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?></a></li>
+                <li><a href="login.php"><span
+                                class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
+                <li><a href="#"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?>
+                    </a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+<div class="fluid-container">
+    <div class="row">
+        <div class="offset-sm-2 col-sm-6">
+            <button class="btn"><a href="addProduct.php">Add product</a></button>
+        </div>
+    </div>
 
+</div>
 <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
     <form class="form-inline"><?php echo $lang['GET_DEALS']; ?>
