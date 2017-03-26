@@ -8,13 +8,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <?php include 'language.php' ?>
+    <?php include 'cookie.php' ?>
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1>Predaator ja Tulnukas</h1>
-        <p>Osta ja Müü vana kraami</p>
+        <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
+        <p><?php echo $lang['HEADER_TITLE']; ?></p>
     </div>
 </div>
 
@@ -26,16 +28,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Pane Logo</a>
+            <a class="navbar-brand" href="index.php">Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li class="active"><a href="#"><?php echo $lang['HOME']; ?></a></li>
+                <li><a href="contact.php"><?php echo $lang['CONTACT']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><?php echo $lang['SHOPPING_CART']; ?></a></li>
+                <li><a href="?lang=et"><img class="lang_img" src="common/img/estonia_640.png" alt="eesti"></a></li>
+                <li><a href="?lang=en"><img class="lang_img" src="common/img/united_kingdom_640.png" alt="inglise"></a></li>
             </ul>
         </div>
     </div>
@@ -43,6 +47,7 @@
 
 <div class="container">
     <div class="row">
+        <h2><p><?php echo $lang['WELCOME']; ?></p></h2>
         <div class="col-sm-8">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -56,15 +61,15 @@
                     <div class="item active">
                         <img src="common/img/i_view64_2017-02-16_13-53-18.png" alt="shop-image">
                         <div class="carousel-caption">
-                            <h3>Cash&Money&Bitches</h3>
+                            <h3><?php echo $lang['CASH']; ?></h3>
                         </div>
                     </div>
 
                     <div class="item">
                         <img src="common/img/predatorInAction.jpg" alt="predator-Image">
                         <div class="carousel-caption">
-                            <h3>More Sell $</h3>
-                            <p>Lorem ipsum...</p>
+                            <h3><?php echo $lang['MORE']; ?></h3>
+                            <p><?php echo $lang['LOREM']; ?></p>
                         </div>
                     </div>
                 </div>
@@ -82,13 +87,13 @@
         </div>
         <div class="col-sm-4">
             <div class="well">
-                <p>Varsti tuleb siia netipood</p>
+                <p><?php echo $lang['SOON']; ?></p>
             </div>
             <div class="well">
-                <p>Upcoming Events..</p>
+                <p><?php echo $lang['EVENT']; ?></p>
             </div>
             <div class="well">
-                <p>Visit Our Blog</p>
+                <p><?php echo $lang['BLOG']; ?></p>
             </div>
         </div>
     </div>

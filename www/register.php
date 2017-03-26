@@ -1,4 +1,6 @@
 <?php
+include 'language.php';
+include 'cookie.php';
 require_once "./common/core/database/dbconnect.php";
 
 session_start();
@@ -8,14 +10,14 @@ if (isset($_POST["register"])) {
 
     if ($_POST["password"] == $_POST["password_confirmation"]) {
 
-        $firstname =   mysqli_real_escape_string($connect,$_POST["fn"]);
-        $lastname =  mysqli_real_escape_string($connect,$_POST["ln"]);
-        $email =  mysqli_real_escape_string($connect,$_POST["email"]);
+        $firstname = mysqli_real_escape_string($connect, $_POST["fn"]);
+        $lastname = mysqli_real_escape_string($connect, $_POST["ln"]);
+        $email = mysqli_real_escape_string($connect, $_POST["email"]);
         $password = md5($_POST['password']);
 
         echo "$firstname + $lastname + $email + $password";
 
-        $query = "INSERT into users (first_name, last_name, email, password) ". "VALUES " . "('$firstname', '$lastname', '$email', '$password')";
+        $query = "INSERT into users (first_name, last_name, email, password) " . "VALUES " . "('$firstname', '$lastname', '$email', '$password')";
 
         echo $query;
         // if succesful redirect home.php
@@ -27,7 +29,7 @@ if (isset($_POST["register"])) {
         }
 
 
-    }else{
+    } else {
         $_SESSION['message'] = "Passwords did not match";
     }
 
@@ -72,7 +74,8 @@ if (isset($_POST["register"])) {
                 <li><a href="contact.php">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li class="active"><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a>
+                </li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
@@ -88,65 +91,67 @@ if (isset($_POST["register"])) {
                 <fieldset>
 
                     <!-- Form Name -->
-                    <legend>Pole veel kasutaja? <span
-                                title="...sellest pole midagi! Saad selle endale siin väga lihtsalt teha."
-                                class="glyphicon glyphicon-info-sign"></span></legend>
+                    <legend><?php echo $lang['USER']; ?><span title="<?php echo $lang['TOOLTIP1']; ?>"
+                                                              class="glyphicon glyphicon-info-sign"></span></legend>
 
                     <!-- First name-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="fn">First name</label>
+                        <label class="col-md-4 control-label" for="fn"><?php echo $lang['FIRST_NAME']; ?></label>
                         <div class="col-md-4">
-                            <input id="fn" name="fn" type="text" placeholder="First name" class="form-control input-md"
-                                   required>
+                            <input id="fn" name="fn" type="text" placeholder="<?php echo $lang['FIRST_NAME']; ?>"
+                                   class="form-control input-md"
+                                   required="">
                         </div>
                     </div>
 
                     <!-- last name-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="ln">Last name</label>
+                        <label class="col-md-4 control-label" for="ln"><?php echo $lang['LAST_NAME']; ?></label>
                         <div class="col-md-4">
-                            <input id="ln" name="ln" type="text" placeholder="Last name" class="form-control input-md"
-                                   required>
+                            <input id="ln" name="ln" type="text" placeholder="<?php echo $lang['LAST_NAME']; ?>"
+                                   class="form-control input-md"
+                                   required="">
 
                         </div>
                     </div>
 
                     <!-- e-mail /username-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="email">Email</label>
+                        <label class="col-md-4 control-label" for="email">E-mail</label>
                         <div class="col-md-4">
-                            <input id="email" name="email" type="email" placeholder="email"
+                            <input id="email" name="email" type="email" placeholder="E-mail"
                                    class="form-control input-md"
-                                   required>
+                                   required="">
 
                         </div>
                     </div>
 
                     <!-- password-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="password">Password <span
-                                    title="Veendu, et valid endale piisavalt tugeva parooli!"
+                        <label class="col-md-4 control-label" for="password"><?php echo $lang['PASSWORD']; ?> <span
+                                    title="<?php echo $lang['TOOLTIP2']; ?>"
                                     class="glyphicon glyphicon-info-sign"></span> </label>
+
                         <div class="col-md-4">
                             <input type="password" name="password" id="password" class="form-control input-sm"
-                                   placeholder="Password" required>
+                                   placeholder=<?php echo $lang['PASSWORD']; ?>>
 
                         </div>
                     </div>
                     <!-- confirm password-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="password">Password</label>
+                        <label class="col-md-4 control-label" for="password"><?php echo $lang['PASSWORD']; ?></label>
                         <div class="col-md-4">
                             <input type="password" name="password_confirmation" id="password_confirmation"
-                                   class="form-control input-sm" placeholder="Confirm Password" required>
+                                   class="form-control input-sm" placeholder="<?php echo $lang['CONFIRM']; ?>">
                         </div>
                     </div>
                     <!-- Button -->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="register"></label>
                         <div class="col-md-4">
-                            <button type="submit" id="register" name="register" class="btn btn-primary">Register
-                            </button>
+                            <button id="register" name="register"
+                                    class="btn btn-primary"><?php echo $lang['REGISTER']; ?></button>
                         </div>
                     </div>
 

@@ -1,40 +1,3 @@
-
-.button {
-	background-color: blue;
-    /*color: white;*/
-    padding: 15px 32px;
-    /*text-align: center;*/
-    /*text-decoration: none;*/
-    display: inline-block;
-    /*font-size: 16px;*/
-    /*margin: 10px;*/
-    /*cursor: pointer;*/
-    /*border: 2px solid #a1a1a1;*/
-    
-    border-radius: 25px;
-
-    /*padding: 20px; */
-
-}
-#header-buttons{
-	top: 0;
-	right: 0;
-	position: absolute;
-	margin: 10px;
-}
-#header-name{
-	top: 0;
-	position: absolute;
-	left: 0;
-	margin: 10px;
-}
-.header{
-	position: relative;
-	background-color: #a5ff0c;
-	padding: 30px;
-	margin: -10px;
-}
-
 #ltpic1{
 	width: 60px;
 }
@@ -47,35 +10,40 @@
 	width: 60px;
 }
 
+.lang_img{
+    width: 20px;
+
+}
+
 .body {
 }
 
 iframe {
-	width: 500px;
-	height: 350px;
-	border: 0px;
+	width: 35em;
+	height: 25em;
+	border: 0;
 }
 
 body {
 }
 
 #gmap_canvas{
-	height:440px;
-	width:700px;
+	height:30em;
+	width:47em;
 }
 
 #gmap_canvas img{
 	max-width:none!important;
 	background:none!important
 }
+
 #front-page-img{
 	width:980px;
 	height:583px;
-
 }
 
 .navbar {
-	margin-bottom: 50px;
+	margin-bottom: 3em;
 	border-radius: 0;
 }
 
@@ -86,6 +54,24 @@ body {
 
 /* Add a gray background color and some padding to the footer */
 footer {
+	margin-top: 2em;
 	background-color: #f2f2f2;
-	padding: 25px;
+	padding: 1em;
 }
+
+[title]:hover:after{
+	content: attr(title);
+	position: absolute;
+	top:1em;
+	left:1.5em;
+	padding: 0.2em 0.6em;
+	border:0.1em solid lightgrey;
+	background-color: cornsilk;
+	width: 15em;
+	z-index: 98;
+	font-family: Cambria;
+	font-size: medium;
+	text-align: left;
+}
+
+

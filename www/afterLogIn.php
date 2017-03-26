@@ -14,8 +14,8 @@
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1>Predaator ja Tulnukas</h1>
-        <p>Osta ja Müü vana kraami</p>
+        <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
+        <p><?php echo $lang['HEADER_TITLE']; ?></p>
     </div>
 </div>
 

@@ -1,5 +1,6 @@
 <?php
-
+include 'language.php';
+include 'cookie.php';
 require_once "./common/core/database/dbconnect.php";
 session_start();
 
@@ -50,14 +51,20 @@ if (isset($_POST["login"])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
+       
         <div class="alert"><?= $_SESSION['message'] ?></div>
         <h1>Predaator ja Tulnukas</h1>
         <p>Osta ja Müü vana kraami</p>
+
+        <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
+        <p><?php echo $lang['HEADER_TITLE']; ?></p>
+
     </div>
 </div>
 
@@ -71,12 +78,15 @@ if (isset($_POST["login"])) {
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="index.php"><?php echo $lang['HOME']; ?></a></li>
+                <li><a href="contact.php"><?php echo $lang['CONTACT']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li class="active"><a href="#"><span
+                                class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
+                <li><a href="#"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?>
+                    </a></li>
             </ul>
         </div>
     </div>
@@ -87,30 +97,36 @@ if (isset($_POST["login"])) {
         <!-- Log in part  -->
         <div class="col-sm-6">
 
+
             <form class="form-horizontal" method="post">
                 <fieldset>
-                    <legend>Logi sisse siin! <span
-                                title="Kui sul on kasutaja juba olemas, saad siin emaili ja parooliga sisse logida"
-                                class="glyphicon glyphicon-info-sign"></span></legend>
 
-                    <div class="form-group row">
-                        <label for="email" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-6">
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="password" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-6">
-                            <input type="password" id="password" name="password" class="form-control"
-                                   placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-sm-2 col-sm-6">
-                            <button type="submit" id="login" name="login" class="btn btn-primary">Sign in</button>
-                        </div>
-                    </div>
+                        <fieldset>
+                            <legend><?php echo $lang['LOGIN_HERE']; ?> <span title="<?php echo $lang['TOOLTIP3']; ?>"
+                                                                             class="glyphicon glyphicon-info-sign"></span>
+                            </legend>
+
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword3"
+                                       class="col-sm-2 col-form-label"><?php echo $lang['PASSWORD']; ?></label>
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="inputPassword"
+                                           placeholder=<?php echo $lang['PASSWORD']; ?>>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-sm-2 col-sm-6">
+                                    <button type="submit" class="btn btn-primary"><?php echo $lang['LOGIN']; ?></button>
+                                </div>
+                            </div>
+                        </fieldset>
+
                 </fieldset>
             </form>
             <a href="register.php">Pole veel kasutaja ?</a>
