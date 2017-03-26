@@ -84,7 +84,7 @@
                         Nimi: <input type="text" name="name"id="name"><br>
 
                         Summa: <input type="text" name="sum" id="sum"><br>
-                        <button><input type="submit"><a href="pay.php">Anneta</a> </button>
+                        <button type="submit"><a href="pay.php">Anneta</a> </button>
 
                     </form>
 
