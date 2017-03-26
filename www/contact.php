@@ -9,16 +9,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="common/js/changeImage.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
-    <?php include 'language.php' ?>
-    <?php include 'cookie.php' ?>
 
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
-        <p><?php echo $lang['HEADER_TITLE']; ?></p>
+        <h1>Predaator ja Tulnukas</h1>
+        <p>Osta ja Müü vana kraami</p>
     </div>
 </div>
 
@@ -28,16 +26,16 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Logo</a>
+            <a class="navbar-brand" href="index.php">PANE Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.php"><?php echo $lang['HOME']; ?></a></li>
-                <li class="active"><a href="contact.php"><?php echo $lang['CONTACT']; ?></a></li>
+                <li><a href="index.php">Home</a></li>
+                <li class="active"><a href="contact.php">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?></a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
     </div>
@@ -47,7 +45,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="row">
-                <h2> <?php echo $lang['TEAM']; ?> </h2>
+                <h2> Predaatori tiim: </h2>
             </div>
             <div class="row">
                 <div class="col-md-5">
@@ -56,7 +54,7 @@
                     </h3>
                 </div>
                 <div class="col-md-3">
-                    <img id="ltpic1" src="common/img/pilt3.jpg" onclick='changeImage("common/img/pilt4.jpg");' alt="vahva elevant">
+                    <img id="ltpic1" src="common/img/pilt3.jpg" onclick='changeImage("common/img/pilt4.jpg");' alt="vahva elevant" >
                 </div>
             </div>
             <div class="row">
@@ -79,9 +77,22 @@
                     <img id="ltpic3" src="common/img/pilt2.jpeg" alt="muhe känguru">
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-5">
+
+                    <form action="pay.php" method="get">
+                        Nimi: <input type="text" name="name"id="name"><br>
+
+                        Summa: <input type="text" name="sum" id="sum"><br>
+                        <button><input type="submit"><a href="pay.php">Anneta</a> </button>
+
+                    </form>
+
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            <h4><?php echo $lang['WHERE']; ?></h4>
+            <h4>Predaatori oksjonid leiad: </h4>
 
             <script defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC_ve16Vev_0Bh1FDf6IhLFu4p5qwenB2M'></script>
             <div id='gmap_canvas'></div>
