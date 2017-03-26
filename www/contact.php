@@ -81,7 +81,7 @@
                 <div class="col-md-5">
 
                     <form action="pay.php" method="get">
-                        Nimi: <input type="text" name="name"id="name"><br>
+                        <h4>Võtame vastu kõik annetused meie õilsa eesmärgi nimel</h4>
 
                         Summa: <input type="text" name="sum" id="sum"><br>
                         <button type="submit"><a href="pay.php">Anneta</a> </button>
