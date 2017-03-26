@@ -1,7 +1,8 @@
 <?php
-include 'language.php';
-include 'cookie.php';
+
+
 session_start();
+include 'loggedIn.php';
 ?>
 
 
@@ -57,7 +58,7 @@ session_start();
 <div class="container-fluid">
     <h3><?= $_SESSION["welcomemsg"] ?></h3>
     <br>
-    <h3><?php echo $lang['FIRST_NAME']; ?> <?= $_SESSION["firstName"] ?></h3>
+    <h3><?php echo $lang['FIRST_NAME'] .": "; ?> <?= $_SESSION["firstName"] ?></h3>
     <br>
     <h3>E-mail: <?= $_SESSION["email" ] ?></h3>
     <br>

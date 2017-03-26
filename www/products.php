@@ -1,12 +1,9 @@
 <?php
 include 'language.php';
 include 'cookie.php';
-
+include 'loggedIn.php';
 session_start();
-if (!isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] != true) {
-    $_SESSION["message"] = "You have to log in";
-    header("location: login.php");
-}
+
 
 
 ?>
