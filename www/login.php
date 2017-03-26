@@ -57,6 +57,8 @@ if (isset($_POST["login"])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <?php include 'language.php' ?>
+    <?php include 'cookie.php' ?>
 
 </head>
 <body>
@@ -129,7 +131,7 @@ if (isset($_POST["login"])) {
 
                 </fieldset>
             </form>
-            <a href="register.php">Pole veel kasutaja ?</a>
+            <a href="register.php"><?php echo $lang['USER']; ?></a>
         </div>
 
     </div>

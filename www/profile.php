@@ -15,6 +15,8 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <?php include 'language.php' ?>
+    <?php include 'cookie.php' ?>
 </head>
 <body>
 
@@ -37,15 +39,16 @@ session_start();
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="home.php">Home</a></li>
-                <li><a href="#git commit">Products</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="contact.php">Contact</a></li>
+ <li class="active"><a href="home.php"><?php echo $lang['HOME']; ?></a></li>
+                <li><a href="#"><?php echo $lang['PRODUCTS']; ?></a></li>
+                <li><a href="#"><?php echo $lang['DEALS']; ?></a></li>
+                <li><a href="#"><?php echo $lang['STORES']; ?></a></li>
+                <li><a href="contact.php"><?php echo $lang['CONTACT']; ?></a></li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?= $_SESSION["firstName"] ?></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?></a></li>
             </ul>
         </div>
     </div>
@@ -54,19 +57,19 @@ session_start();
 <div class="container-fluid">
     <h3><?= $_SESSION["welcomemsg"] ?></h3>
     <br>
-    <h3>Eesnimi: <?= $_SESSION["firstName"] ?></h3>
+    <h3><?php echo $lang['FIRST_NAME']; ?> <?= $_SESSION["firstName"] ?></h3>
     <br>
-    <h3>Email: <?= $_SESSION["email" ] ?></h3>
+    <h3>E-mail: <?= $_SESSION["email" ] ?></h3>
     <br>
-    <button ><a href="logout.php">Log out</a></button>
+    <button ><a href="logout.php"><?php echo $lang['LOGOUT']; ?></a></button>
 </div>
 
 
 <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
-    <form class="form-inline">Get deals:
+    <form class="form-inline"><?php echo $lang['GET_DEALS']; ?>
         <input type="email" class="form-control" size="50" placeholder="Email Address">
-        <button type="button" class="btn btn-danger">Sign Up</button>
+        <button type="button" class="btn btn-danger"><?php echo $lang['SIGN_UP']; ?></button>
     </form>
 </footer>
 
