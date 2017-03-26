@@ -38,7 +38,7 @@ session_start();
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="home.php">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="#git commit">Products</a></li>
                 <li><a href="#">Deals</a></li>
                 <li><a href="#">Stores</a></li>
                 <li><a href="contact.php">Contact</a></li>
