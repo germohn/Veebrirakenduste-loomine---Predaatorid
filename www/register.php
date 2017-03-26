@@ -50,13 +50,15 @@ if (isset($_POST["register"])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <?php include 'language.php' ?>
+    <?php include 'cookie.php' ?>
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1>Predaator ja Tulnukas</h1>
-        <p>Osta ja Müü vana kraami</p>
+        <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
+        <p><?php echo $lang['HEADER_TITLE']; ?></p>
     </div>
 </div>
 
@@ -70,13 +72,13 @@ if (isset($_POST["register"])) {
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="index.php"><?php echo $lang['HOME']; ?></a></li>
+                <li><a href="contact.php"><?php echo $lang['CONTACT']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a>
+                <li class="active"><a href="login.php"><span class="glyphicon glyphicon-user"></span><?php echo $lang['YOUR_ACCOUNT']; ?></a>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><?php echo $lang['SHOPPING_CART']; ?></a></li>
             </ul>
         </div>
     </div>

@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <?php include 'language.php' ?>
+    <?php include 'cookie.php' ?>
 </head>
 <body>
 
@@ -30,15 +32,15 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="#"><?php echo $lang['HOME']; ?></a></li>
+                <li><a href="#"><?php echo $lang['PRODUCTS']; ?></a></li>
+                <li><a href="#"><?php echo $lang['DEALS']; ?></a></li>
+                <li><a href="#"><?php echo $lang['STORES']; ?></a></li>
+                <li><a href="#"><?php echo $lang['CONTACT']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?></a></li>
             </ul>
         </div>
     </div>
@@ -48,23 +50,23 @@
     <div class="row">
         <div class="col-sm-4">
             <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                <div class="panel-heading"><?php echo $lang['BLACK']; ?></div>
                 <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                <div class="panel-footer"><?php echo $lang['MOBILES']; ?></div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-danger">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                <div class="panel-heading"><?php echo $lang['BLACK']; ?>L</div>
                 <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                <div class="panel-footer"><?php echo $lang['MOBILES']; ?></div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-success">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                <div class="panel-heading"><?php echo $lang['BLACK']; ?></div>
                 <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                <div class="panel-footer"><?php echo $lang['MOBILES']; ?></div>
             </div>
         </div>
     </div>
@@ -74,23 +76,23 @@
     <div class="row">
         <div class="col-sm-4">
             <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                <div class="panel-heading"><?php echo $lang['BLACK']; ?></div>
                 <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                <div class="panel-footer"><?php echo $lang['MOBILES']; ?></div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                <div class="panel-heading"><?php echo $lang['BLACK']; ?>L</div>
                 <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                <div class="panel-footer"><?php echo $lang['MOBILES']; ?></div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
+                <div class="panel-heading"><?php echo $lang['BLACK']; ?></div>
                 <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                <div class="panel-footer"><?php echo $lang['MOBILES']; ?></div>
             </div>
         </div>
     </div>
@@ -98,9 +100,9 @@
 
 <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
-    <form class="form-inline">Get deals:
+    <form class="form-inline"><?php echo $lang['GET_DEALS']; ?>
         <input type="email" class="form-control" size="50" placeholder="Email Address">
-        <button type="button" class="btn btn-danger">Sign Up</button>
+        <button type="button" class="btn btn-danger"><?php echo $lang['SIGN_UP']; ?></button>
     </form>
 </footer>
 

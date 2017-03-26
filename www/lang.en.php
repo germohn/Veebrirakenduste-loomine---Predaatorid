@@ -31,4 +31,14 @@ $lang['TOOLTIP1'] = "... No problem! You can easily sign yourself up here...";
 $lang['TOOLTIP2'] = "Make sure you choose a password strong enough!";
 $lang['TOOLTIP3'] = "If you already have an account, you can log in here...";
 $lang['WELCOME'] = "Welcome!";
+$lang['PRODUCTS'] = "Products";
+$lang['DEALS'] = "Deals";
+$lang['STORES'] = "Stores";
+$lang['GET_DEALS'] = "Get deals: ";
+$lang['SIGN_UP'] = "Sing Up";
+$lang['BLACK'] = "BLACK FRIDAY DEAL";
+$lang['MOBILES'] = "Buy 50 mobiles and get a gift card";
+$lang['LOGOUT'] = "Log Out";
+
+
 ?>

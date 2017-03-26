@@ -31,4 +31,12 @@ $lang['TOOLTIP1'] = "...sellest pole midagi! Saad selle endale siin väga lihtsa
 $lang['TOOLTIP2'] = "Veendu, et valid endale piisavalt tugeva parooli!";
 $lang['TOOLTIP3'] = "Kui sul on kasutaja juba olemas, saad siin emaili ja parooliga sisse logida";
 $lang['WELCOME'] = "Tere tulemast!";
+$lang['PRODUCTS'] = "Tooted";
+$lang['DEALS'] = "Diilid";
+$lang['STORES'] = "Poed";
+$lang['GET_DEALS'] = "Saa osa diilidest: ";
+$lang['SIGN_UP'] = "Kinnita";
+$lang['BLACK'] = "MUSTA REEDE DIIL";
+$lang['MOBILES'] = "Osta 50 mobiili, saad kinkekaardi";
+$lang['LOGOUT'] = "Logi välja";
 ?>
