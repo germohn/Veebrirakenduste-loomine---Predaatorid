@@ -9,14 +9,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="common/js/changeImage.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <?php include 'language.php' ?>
+    <?php include 'cookie.php' ?>
 
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1>Predaator ja Tulnukas</h1>
-        <p>Osta ja Müü vana kraami</p>
+        <h1><?php echo $lang['PAGE_TITLE']; ?></h1>
+        <p><?php echo $lang['HEADER_TITLE']; ?></p>
     </div>
 </div>
 
@@ -26,16 +28,16 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">PANE Logo</a>
+            <a class="navbar-brand" href="index.php">Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
-                <li class="active"><a href="contact.php">Contact</a></li>
+                <li><a href="index.php"><?php echo $lang['HOME']; ?></a></li>
+                <li class="active"><a href="contact.php"><?php echo $lang['CONTACT']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['YOUR_ACCOUNT']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span><?php echo $lang['SHOPPING_CART']; ?></a></li>
             </ul>
         </div>
     </div>
@@ -45,7 +47,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="row">
-                <h2> Predaatori tiim: </h2>
+                <h2><?php echo $lang['TEAM']; ?></h2>
             </div>
             <div class="row">
                 <div class="col-md-5">
@@ -78,21 +80,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5">
 
                     <form action="pay.php" method="get">
-                        <h4>Võtame vastu kõik annetused meie õilsa eesmärgi nimel</h4>
+                        <h4><?php echo $lang['DONATION']; ?></h4>
 
-                        Summa: <input type="text" name="sum" id="sum"><br>
-                        <button type="submit"><a href="pay.php">Anneta</a> </button>
+                        <?php echo $lang['SUM']; ?>: <input type="text" name="sum" id="sum"><br>
+                        <button class="btn" type="submit"><a href="pay.php"><?php echo $lang['DONATE']; ?></a> </button>
 
                     </form>
 
-                </div>
             </div>
         </div>
         <div class="col-md-6">
-            <h4>Predaatori oksjonid leiad: </h4>
+            <h4><?php echo $lang['WHERE']; ?> </h4>
 
             <script defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC_ve16Vev_0Bh1FDf6IhLFu4p5qwenB2M'></script>
             <div id='gmap_canvas'></div>

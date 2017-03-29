@@ -2,6 +2,7 @@
 
 session_start();
 include 'homeLogic.php';
+include 'language.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +14,6 @@ include 'homeLogic.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
-    <?php include 'language.php' ?>
-    <?php include 'cookie.php' ?>
 </head>
 <body>
 

@@ -61,7 +61,7 @@ session_start();
 <div class="fluid-container">
     <div class="row">
         <div class="offset-sm-2 col-sm-6">
-            <button class="btn"><a href="addProduct.php">Add product</a></button>
+            <button class="btn"><a href="addProduct.php"><?php echo $lang['ADD_PRODUCT']; ?></a></button>
         </div>
     </div>
 

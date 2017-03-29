@@ -39,4 +39,9 @@ $lang['SIGN_UP'] = "Kinnita";
 $lang['BLACK'] = "MUSTA REEDE DIIL";
 $lang['MOBILES'] = "Osta 50 mobiili, saad kinkekaardi";
 $lang['LOGOUT'] = "Logi välja";
+$lang['DONATION'] = "Võtame vastu kõik annetused meie õilsa eesmärgi nimel";
+$lang['SUM'] = "Summa";
+$lang['DONATE'] = "Anneta";
+$lang['ADD_PRODUCT'] = "Lisa toode";
+
 ?>

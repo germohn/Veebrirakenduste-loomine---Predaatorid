@@ -39,6 +39,9 @@ $lang['SIGN_UP'] = "Sing Up";
 $lang['BLACK'] = "BLACK FRIDAY DEAL";
 $lang['MOBILES'] = "Buy 50 mobiles and get a gift card";
 $lang['LOGOUT'] = "Log Out";
-
+$lang['DONATION'] = "We will kindly receive your donations for our great cause";
+$lang['SUM'] = "Amount";
+$lang['DONATE'] = "Donate";
+$lang['ADD_PRODUCT'] = "Add product";
 
 ?>
