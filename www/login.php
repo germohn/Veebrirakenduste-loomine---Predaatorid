@@ -16,6 +16,7 @@ require_once 'loginLogic.php';
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="common/js/changewithAJAX.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
     <?php include 'language.php' ?>
     <?php include 'cookie.php' ?>
@@ -125,7 +126,10 @@ require_once 'loginLogic.php';
 </div>
 
 <footer class="container-fluid text-center">
-    <p>Predaator Copyright</p>
+    <div id="copyright">
+        <p onclick="kasutabAJAXit()">Predaator Copyright</p>
+
+    </div>
 </footer>
 
 </body>

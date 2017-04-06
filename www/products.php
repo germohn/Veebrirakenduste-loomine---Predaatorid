@@ -17,6 +17,7 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="common/js/changewithAJAX.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
 
 </head>
@@ -67,7 +68,10 @@ session_start();
 
 </div>
 <footer class="container-fluid text-center">
-    <p>Online Store Copyright</p>
+    <div id="copyright">
+        <p onclick="kasutabAJAXit()">Predaator Copyright</p>
+
+    </div>
     <form class="form-inline"><?php echo $lang['GET_DEALS']; ?>
         <input type="email" class="form-control" size="50" placeholder="E-mail">
         <button type="button" class="btn btn-danger"><?php echo $lang['SIGN_UP']; ?></button>

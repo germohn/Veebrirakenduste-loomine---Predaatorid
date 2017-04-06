@@ -13,11 +13,13 @@ include 'loggedIn.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.1.1.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='/common/js/jquery-3.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <script src="common/js/changewithAJAX.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
     <?php include 'language.php' ?>
     <?php include 'cookie.php' ?>
@@ -70,7 +72,10 @@ include 'loggedIn.php';
 
 
 <footer class="container-fluid text-center">
-    <p>Online Store Copyright</p>
+    <div id="copyright">
+        <p onclick="kasutabAJAXit()">Predaator Copyright</p>
+
+    </div>
     <form class="form-inline"><?php echo $lang['GET_DEALS']; ?>
         <input type="email" class="form-control" size="50" placeholder="Email Address">
         <button type="button" class="btn btn-danger"><?php echo $lang['SIGN_UP']; ?></button>
