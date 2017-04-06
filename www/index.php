@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
+    <script src="common/js/changewithAJAX.js"></script>
     <?php include 'language.php' ?>
     <?php include 'cookie.php' ?>
 </head>
@@ -100,9 +101,14 @@
     <hr>
 </div>
 
-
 <footer class="container-fluid text-center">
-    <p>Predaator Copyright</p>
+
+    <div id="copyright">
+        <p onclick="kasutabAJAXit()">Predaator Copyright</p>
+
+    </div>
+
+
 </footer>
 
 </body>

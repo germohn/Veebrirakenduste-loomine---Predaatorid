@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="common/js/changewithAJAX.js"></script>
     <script src="common/js/changeImage.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
     <?php include 'language.php' ?>
@@ -114,7 +115,10 @@
     </div>
 </div>
 <footer class="container-fluid text-center">
-    <p>Predaator Copyright</p>
+    <div id="copyright">
+        <p onclick="kasutabAJAXit()">Predaator Copyright</p>
+
+    </div>
 </footer>
 </body>
 </html>
