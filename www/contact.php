@@ -79,16 +79,6 @@
                     <img id="ltpic3" src="common/img/pilt2.jpeg" alt="muhe känguru">
                 </div>
             </div>
-            <div class="row">
-                
-                <form action="pay.php" method="get">
-                    <h4><?php echo $lang['DONATION']; ?></h4>
-
-                    <?php echo $lang['SUM']; ?>: <input type="text" name="sum" id="sum"><br>
-                    <button class="btn" type="submit"><a href="pay.php"><?php echo $lang['DONATE']; ?></a> </button>
-
-
-            </div>
         </div>
         <div class="col-md-6">
             <h4><?php echo $lang['WHERE']; ?> </h4>
@@ -97,6 +87,30 @@
             <div id='gmap_canvas'></div>
             <script src="common/js/map.js" defer></script>
         </div>
+    </div>
+    <div class="row">
+        <form action="pay.php" method="get">
+        <div class = "col-sm-4">
+            <div class = "row">
+                    <h4><?php echo $lang['DONATION']; ?></h4>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-3">
+                    <label class="col-sm-2 col-form-label"><?php echo $lang['SUM']; ?>:</label>
+                </div>
+                <div class = "col-sm-7">
+                    <input type="text" name="sum" id ="sum">
+                </div>
+            </div>
+            <div class = "row">
+                <button class = "btn" type ="submit"  formaction="pay.php"><?php echo $lang['DONATE']; ?></button>
+            </div>
+
+        </div>
+        <div class = "col-sm-6">
+
+        </div>
+        </form>
     </div>
 </div>
 <footer class="container-fluid text-center">
