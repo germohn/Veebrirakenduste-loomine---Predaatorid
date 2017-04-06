@@ -80,14 +80,13 @@
                 </div>
             </div>
             <div class="row">
+                
+                <form action="pay.php" method="get">
+                    <h4><?php echo $lang['DONATION']; ?></h4>
 
-                    <form action="pay.php" method="get">
-                        <h4><?php echo $lang['DONATION']; ?></h4>
+                    <?php echo $lang['SUM']; ?>: <input type="text" name="sum" id="sum"><br>
+                    <button class="btn" type="submit"><a href="pay.php"><?php echo $lang['DONATE']; ?></a> </button>
 
-                        <?php echo $lang['SUM']; ?>: <input type="text" name="sum" id="sum"><br>
-                        <button class="btn" type="submit"><a href="pay.php"><?php echo $lang['DONATE']; ?></a> </button>
-
-                    </form>
 
             </div>
         </div>
