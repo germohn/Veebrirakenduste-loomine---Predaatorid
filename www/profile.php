@@ -87,7 +87,9 @@ include 'loggedIn.php';
         </table>
     </div>
     <br>
+
     <a href="logout.php" class="btn btn-default"><?php echo $lang['LOGOUT']; ?></a>
+
 
 
 </div>

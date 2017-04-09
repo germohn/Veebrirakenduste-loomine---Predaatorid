@@ -67,7 +67,7 @@ session_start();
 
                 <input type="text" name="productName" id="productName" placeholder="Product name" class="form-control input-md" required>
                 <input type="text" name="description" id="description" placeholder="Describe the product" class="form-control input-md" required>
-                <input type="number" name="price" id="price" placeholder="Price" class="form-control input-md"required>
+                <input type="number" name="price" id="price" placeholder="Price" class="form-control input-md" required>
                 <lable>Add picture</lable><input type="file" name="picture" id="picture" accept="image/*" required>
             </form>
         </div>

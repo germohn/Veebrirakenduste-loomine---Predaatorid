@@ -55,7 +55,7 @@ include "./common/core/functions/users.php";
 
 <div class="container">
     <div class="row">
-        <h2><p><?php echo $lang['WELCOME']; ?></p></h2>
+        <h2><?php echo $lang['WELCOME']; ?></h2>
         <div class="col-sm-8">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->

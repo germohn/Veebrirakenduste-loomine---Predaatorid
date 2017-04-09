@@ -84,7 +84,7 @@ require_once 'loginLogic.php';
                                class="col-sm-2 col-form-label"><?php echo $lang['PASSWORD']; ?></label>
                         <div class="col-sm-6">
                             <input type="password" id="password" name="password" class="form-control"
-                                   placeholder=<?php echo $lang['PASSWORD']; ?>>
+                                   placeholder="<?php echo $lang['PASSWORD']; ?>">
                         </div>
                     </div>
                     <div class="form-group row">
