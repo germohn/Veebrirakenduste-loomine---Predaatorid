@@ -67,7 +67,9 @@ include 'loggedIn.php';
     <br>
     <h3>E-mail: <?= $_SESSION["email" ] ?></h3>
     <br>
-    <button class = "btn"><a href="logout.php"><?php echo $lang['LOGOUT']; ?></a></button>
+    <form action="../logout.php">
+        <input class = "btn" type="submit" value="<?php echo $lang['LOGOUT']; ?>">
+    </form>
 </div>
 
 

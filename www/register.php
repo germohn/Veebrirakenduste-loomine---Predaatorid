@@ -106,7 +106,7 @@ include 'regiserLogic.php';
 
                         <div class="col-md-4">
                             <input type="password" name="password" id="password" class="form-control input-sm"
-                                   placeholder=<?php echo $lang['PASSWORD']; ?>>
+                                   placeholder="<?php echo $lang['PASSWORD']; ?>">
 
                         </div>
                     </div>

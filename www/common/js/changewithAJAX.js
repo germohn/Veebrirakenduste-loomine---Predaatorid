@@ -8,4 +8,5 @@ function kasutabAJAXit() {
     };
     xhttp.open("GET", "info.txt", true);
     xhttp.send();
+
 }
