@@ -5,8 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.1.1.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='/common/js/jquery-3.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="common/js/changewithAJAX.js"></script>
     <script src="common/js/changeImage.js"></script>
     <link rel="stylesheet" href="common/css/style.css">
     <?php include 'language.php' ?>
@@ -79,17 +88,6 @@
                     <img id="ltpic3" src="common/img/pilt2.jpeg" alt="muhe känguru">
                 </div>
             </div>
-            <div class="row">
-
-                    <form action="pay.php" method="get">
-                        <h4><?php echo $lang['DONATION']; ?></h4>
-
-                        <?php echo $lang['SUM']; ?>: <input type="text" name="sum" id="sum"><br>
-                        <button class="btn" type="submit"><a href="pay.php"><?php echo $lang['DONATE']; ?></a> </button>
-
-                    </form>
-
-            </div>
         </div>
         <div class="col-md-6">
             <h4><?php echo $lang['WHERE']; ?> </h4>
@@ -99,9 +97,36 @@
             <script src="common/js/map.js" defer></script>
         </div>
     </div>
+    <div class="row">
+        <form action="pay.php" method="get">
+        <div class = "col-sm-4">
+            <div class = "row">
+                    <h4><?php echo $lang['DONATION']; ?></h4>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-3">
+                    <label class="col-sm-2 col-form-label"><?php echo $lang['SUM']; ?>:</label>
+                </div>
+                <div class = "col-sm-7">
+                    <input type="text" name="sum" id ="sum">
+                </div>
+            </div>
+            <div class = "row">
+                <button class = "btn" type ="submit"  formaction="pay.php"><?php echo $lang['DONATE']; ?></button>
+            </div>
+
+        </div>
+        <div class = "col-sm-6">
+
+        </div>
+        </form>
+    </div>
 </div>
 <footer class="container-fluid text-center">
-    <p>Predaator Copyright</p>
+    <div id="copyright">
+        <p onclick="kasutabAJAXit()">Predaator Copyright</p>
+
+    </div>
 </footer>
 </body>
 </html>

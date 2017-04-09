@@ -7,7 +7,7 @@
     <body>
 <?php
 var_dump($_POST);
-// die();
+//die();
 // THIS IS AUTO GENERATED SCRIPT
 // (c) 2011-2017 Kreata OÜ www.pangalink.net
 
