@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+include "./common/core/functions/users.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,7 +111,8 @@
 <footer class="container-fluid text-center">
 
     <div id="copyright">
-        <p onclick="kasutabAJAXit()">Predaator Copyright</p>
+        <p>Total registered accounts: <?php echo $_SESSION["numberOfAccoutns"]; ?> </p>
+        <p onclick="kasutabAJAXit()">Predaator Copyright </p>
 
     </div>
 

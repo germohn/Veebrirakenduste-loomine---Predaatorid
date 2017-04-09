@@ -2,7 +2,9 @@
 
 session_start();
 include 'homeLogic.php';
-include 'language.php'
+include 'language.php';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -70,6 +70,7 @@ include 'loggedIn.php';
     <form action="../logout.php">
         <input class = "btn" type="submit" value="<?php echo $lang['LOGOUT']; ?>">
     </form>
+
 </div>
 
 
