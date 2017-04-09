@@ -2,7 +2,12 @@
 
 session_start();
 include 'homeLogic.php';
-include 'language.php'
+include 'language.php';
+
+require_once "./common/core/database/dbconnect.php";
+
+$sql = "SELECT COUNT(*) FROM users"
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
