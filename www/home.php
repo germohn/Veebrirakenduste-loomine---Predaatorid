@@ -1,16 +1,9 @@
 <?php
-var_dump("tere");
-echo  "test";
+
 session_start();
 include 'homeLogic.php';
 include 'language.php';
 
-require_once "./common/core/database/dbconnect.php";
-
-$sql = "SELECT COUNT(*) FROM users";
-$query = mysqli_query($connect, $sql);
-var_dump(1);
-var_dump($query);
 
 ?>
 <!DOCTYPE html>
