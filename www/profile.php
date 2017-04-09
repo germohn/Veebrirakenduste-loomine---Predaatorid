@@ -3,6 +3,7 @@
 
 session_start();
 include 'loggedIn.php';
+
 ?>
 
 
@@ -45,7 +46,7 @@ include 'loggedIn.php';
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
- <li class="active"><a href="home.php"><?php echo $lang['HOME']; ?></a></li>
+                <li class="active"><a href="home.php"><?php echo $lang['HOME']; ?></a></li>
                 <li><a href="#"><?php echo $lang['PRODUCTS']; ?></a></li>
                 <li><a href="#"><?php echo $lang['DEALS']; ?></a></li>
                 <li><a href="#"><?php echo $lang['STORES']; ?></a></li>
@@ -53,8 +54,11 @@ include 'loggedIn.php';
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?= $_SESSION["firstName"] ?></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?></a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-user"></span> <?= $_SESSION["firstName"] ?></a>
+                </li>
+                <li><a href="#"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> <?php echo $lang['SHOPPING_CART']; ?>
+                    </a></li>
             </ul>
         </div>
     </div>
@@ -63,11 +67,26 @@ include 'loggedIn.php';
 <div class="container-fluid">
     <h3><?= $_SESSION["welcomemsg"] ?></h3>
     <br>
-    <h3><?php echo $lang['FIRST_NAME'] .": "; ?> <?= $_SESSION["firstName"] ?></h3>
+    <h3><?php echo $lang['FIRST_NAME'] . ": "; ?> <?= $_SESSION["firstName"] ?></h3>
     <br>
-    <h3>E-mail: <?= $_SESSION["email" ] ?></h3>
+    <h3>E-mail: <?= $_SESSION["email"] ?></h3>
     <br>
-
+    <div class="container">
+        <h2>My products</h2>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php require_once "./common/core/functions/showProducts.php" ?>
+            </tbody>
+        </table>
+    </div>
+    <br>
     <a href="logout.php" class="btn btn-default"><?php echo $lang['LOGOUT']; ?></a>
 
 

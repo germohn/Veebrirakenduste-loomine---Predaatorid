@@ -18,19 +18,23 @@ if (isset($_POST["login"])) {
         $mypassword = md5($_POST["password"]);
 
 
-        $sql = "SELECT first_name FROM users WHERE email = '$myusername' and password = '$mypassword'";
+        $sql = "SELECT first_name as name, user_id as id FROM users WHERE email = '$myusername' and password = '$mypassword'";
 
         $query = mysqli_query($connect, $sql);
         $rows = mysqli_num_rows($query);
         if ($rows == 1) {
 
-            $nameResult = mysqli_fetch_assoc($query);
-//            var_dump($nameResult); // prindib array
+            $result = mysqli_fetch_assoc($query);
+      //   var_dump($result); // prindib array
 
 
-            $_SESSION["firstName"] = (string)$nameResult['first_name'];
+            $_SESSION["firstName"] = (string)$result["name"];
             $_SESSION["email"] = $myusername;
             $_SESSION["loggedIn"] = true;
+            $_SESSION["userId"] = (int)$result["id"];
+
+   //         echo $_SESSION["userId"];
+
 
             header("location: home.php"); // Redirecting To Other Page
         } else {
