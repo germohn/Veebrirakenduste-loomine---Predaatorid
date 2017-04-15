@@ -4,6 +4,10 @@ session_start();
 include 'homeLogic.php';
 include 'language.php';
 
+if (!isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] != true) {
+    header("location: /login.php");
+}
+$_SESSION["redirect"] = 'home';
 
 ?>
 <!DOCTYPE html>
@@ -56,7 +60,7 @@ include 'language.php';
 </nav>
 
 <div class="container">
-    <div class="alert"><?= $_SESSION["welcomemsg"] ?></div>
+    <div class="alert">f</div>
     <div class="row">
         <div class="col-sm-4">
             <div class="panel panel-primary">

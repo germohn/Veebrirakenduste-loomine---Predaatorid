@@ -35,8 +35,14 @@ if (isset($_POST["login"])) {
 
    //         echo $_SESSION["userId"];
 
+            if (isset($_SESSION["redirect"]) && $_SESSION["redirect"] == 'profile') {
+                header("location: /profile.php");
+            }
+            else {
+                header("location: home.php"); // Redirecting To Other Page
+            }
 
-            header("location: home.php"); // Redirecting To Other Page
+
         } else {
             $error = "Username or Password is invalid";
         }

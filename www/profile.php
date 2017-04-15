@@ -3,7 +3,13 @@
 
 session_start();
 include 'loggedIn.php';
+include 'homeLogic.php';
 
+
+if (!isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] != true) {
+    header("location: /login.php");
+}
+$_SESSION["redirect"] = 'profile';
 ?>
 
 
