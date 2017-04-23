@@ -10,6 +10,8 @@ include 'cookie.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="client/client.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -45,20 +47,33 @@ include 'cookie.php';
 </nav>
 
 <div class="container">
+<!--    <div id="response"></div>-->
+    <div id="chat"></div>
     <div>
-        <!--        push data output-->
-    </div>
-    <div>
-<!--    input text-->
-        <form action="#" method="post">
-            <input type="text" name="input">
-            <input type="submit" name="submit"  >
-        </form>
+        <input id="data" size="63" placeholder="message"/>
+        <button id="save" onclick="save();return false;">Save</button>
+
     </div>
 </div>
 <footer class="container-fluid text-center">
     <p>Predaator Copyright</p>
 </footer>
-
+<script>
+    function save() {
+        var response = document.getElementById("response");
+        var data = 'data=' + document.getElementById("data").value;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                response.innerHTML = '<a href="files/' + xmlhttp.responseText + '.txt">' + xmlhttp.responseText + '.txt</a>';
+            }
+        }
+        xmlhttp.open("POST", "save.php", true);
+        //Must add this request header to XMLHttpRequest request for POST
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send(data);
+    }
+</script>
 </body>
 </html>
+
