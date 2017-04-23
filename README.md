@@ -16,3 +16,4 @@ Prototüüp: https://github.com/HaraldAstok/Veebrirakenduste-loomine---Predaator
 2. etapp: https://github.com/HaraldAstok/Veebrirakenduste-loomine---Predaatorid/wiki/2.-etapp
 3. etapp: https://github.com/HaraldAstok/Veebrirakenduste-loomine---Predaatorid/wiki/3.-Etapp
 4. etapp: https://github.com/HaraldAstok/Veebrirakenduste-loomine---Predaatorid/wiki/4.-etapp
+5. etapp: https://github.com/HaraldAstok/Veebrirakenduste-loomine---Predaatorid/wiki/5.-etapp
