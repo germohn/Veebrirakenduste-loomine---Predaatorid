@@ -47,33 +47,35 @@ include 'cookie.php';
 </nav>
 
 <div class="container">
-<!--    <div id="response"></div>-->
-    <div id="chat"></div>
-    <div>
-        <input id="data" size="63" placeholder="message"/>
-        <button id="save" onclick="save();return false;">Save</button>
+    <div id="response">
 
+        <div id="chat"></div>
     </div>
-</div>
-<footer class="container-fluid text-center">
-    <p>Predaator Copyright</p>
-</footer>
-<script>
-    function save() {
-        var response = document.getElementById("response");
-        var data = 'data=' + document.getElementById("data").value;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                response.innerHTML = '<a href="files/' + xmlhttp.responseText + '.txt">' + xmlhttp.responseText + '.txt</a>';
+        <div>
+            <input id="data" size="63" placeholder="message"/>
+            <button id="save" onclick="save();return false;">Save</button>
+
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>Predaator Copyright</p>
+    </footer>
+    <script>
+        function save() {
+            var response = document.getElementById("response");
+            var data = 'data=' + document.getElementById("data").value;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    data.innerHTML = '<a href="files/' + xmlhttp.responseText + '.txt">' + xmlhttp.responseText + '.txt</a>';
+                }
             }
+            xmlhttp.open("POST", "save.php", true);
+            //Must add this request header to XMLHttpRequest request for POST
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send(data);
         }
-        xmlhttp.open("POST", "save.php", true);
-        //Must add this request header to XMLHttpRequest request for POST
-        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xmlhttp.send(data);
-    }
-</script>
+    </script>
 </body>
 </html>
 

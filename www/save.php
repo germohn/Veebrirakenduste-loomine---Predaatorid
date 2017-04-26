@@ -6,8 +6,10 @@ if (!empty($post_data)) {
     $dir = 'server';
     $file = 'data';
     $filename ='server/data.txt';
-    $handle = fopen($filename, "w");
+    $handle = fopen($filename, "a");
+
     fwrite($handle, $post_data);
+    fwrite($handle, "<br>");
     fclose($handle);
 
 }
